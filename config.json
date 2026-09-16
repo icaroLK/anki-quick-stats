@@ -1,0 +1,12 @@
+{
+	"thousand_separator": ",",
+	"show_total_lifetime": false,
+	"show_today_stats": true,
+	"show_future_stats": false,
+	"show_default_anki_stats": false,
+	"stat_cards": true,
+	"stat_time": true,
+	"stat_per_card": true,
+	"stat_new": true,
+	"stat_retention": true
+}
