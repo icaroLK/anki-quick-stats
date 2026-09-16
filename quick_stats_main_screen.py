@@ -94,13 +94,11 @@ def _daily_load():
 	return int(result or 0)
 
 
-def generateStats(default_stats=""):
+def generateStats():
 	total = mw.col.db.scalar("select count(id) from revlog where type != 4") or 0
 	show_total = getUserOption('show_total_lifetime', False)
 	show_today = getUserOption('show_today_stats', True)
 	show_future = getUserOption('show_future_stats', False)
-	show_default = getUserOption('show_default_anki_stats', False)
-	default_html = default_stats if show_default else ""
 
 	style = f"""
 	<style>
@@ -292,7 +290,6 @@ def generateStats(default_stats=""):
 
 	return f"""
 	{style}
-	{default_html}
 	<div class="qs-card">
 		{card_body}
 	</div>
@@ -300,8 +297,11 @@ def generateStats(default_stats=""):
 
 
 def db_wrc(deck_browser, content):
-	default_stats = content.stats
-	content.stats = generateStats(default_stats)
+	if not getUserOption('show_default_anki_stats', False):
+		# strip only Anki's own default line, leaving anything other addons
+		# have already added to content.stats untouched
+		content.stats = content.stats.replace(mw.col.studied_today(), "", 1)
+	content.stats += generateStats()
 
 
 from aqt.gui_hooks import deck_browser_will_render_content
