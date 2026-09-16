@@ -53,7 +53,7 @@ An Anki addon that replaces the default "Studied X cards in Y minutes today (Zs/
 
 ## Installation
 
-**From AnkiWeb:** *[Anki Shared Addons](https://ankiweb.net/shared/info/1366349433)*
+**From AnkiWeb:** *[Anki Shared Addons](https://ankiweb.net/shared/info/1366349433)* <br>
 **Code:** `1366349433`
 
 
