@@ -56,6 +56,12 @@ An Anki addon that replaces the default "Studied X cards in Y minutes today (Zs/
 **From AnkiWeb:** *[Anki Shared Addons](https://ankiweb.net/shared/info/1366349433)* <br>
 **Code:** `1366349433`
 
+---
+
+☕ *If this addon helped you, [buy me a coffee](https://buymeacoffee.com/kucha)* 😃
+
+---
+
 
 ## Configuration
 
@@ -77,3 +83,11 @@ Open **Tools → Quick Stats Settings...** for a checkbox/dropdown UI, or edit t
 ## License
 
 MIT - see [LICENSE](LICENSE).
+
+---
+
+<div align="center">
+
+  [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/kucha)
+
+</div>
